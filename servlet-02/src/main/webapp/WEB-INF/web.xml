@@ -4,6 +4,28 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	http://java.sun.com/xml/ns/javaee/web-app_2_3.dtd">
 
+    <!--  写完Servlet类，来web.xml内进行注册-->
+    <servlet>
+      <servlet-name>hello</servlet-name>
+      <servlet-class>com.moc.servlet.HelloServlet</servlet-class>
+        <!--<init-param>
+            <param-name></param-name>
+            <param-value></param-value>
+        </init-param>-->
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>hello</servlet-name>
+      <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
 
-  <display-name>Archetype Created Web Application</display-name>
+    <!--  写完Servlet类，来web.xml内进行注册-->
+    <servlet>
+        <servlet-name>getContext</servlet-name>
+        <servlet-class>com.moc.servlet.GetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getContext</servlet-name>
+        <url-pattern>/getContext</url-pattern>
+    </servlet-mapping>
+
 </web-app>
