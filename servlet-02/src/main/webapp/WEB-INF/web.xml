@@ -4,6 +4,12 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	http://java.sun.com/xml/ns/javaee/web-app_2_3.dtd">
 
+    <!--配置一些WEB应用初始化参数-->
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+    </context-param>
+
     <!--  写完Servlet类，来web.xml内进行注册-->
     <servlet>
       <servlet-name>hello</servlet-name>
@@ -28,4 +34,30 @@
         <url-pattern>/getContext</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>getParameter</servlet-name>
+        <servlet-class>com.moc.servlet.ServletDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getParameter</servlet-name>
+        <url-pattern>/getParameter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sd4</servlet-name>
+        <servlet-class>com.moc.servlet.ServletDemo04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sd4</servlet-name>
+        <url-pattern>/sd4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sd5</servlet-name>
+        <servlet-class>com.moc.servlet.ServletDemo05</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sd5</servlet-name>
+        <url-pattern>/sd5</url-pattern>
+    </servlet-mapping>
 </web-app>
