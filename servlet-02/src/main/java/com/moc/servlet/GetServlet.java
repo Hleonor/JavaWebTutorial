@@ -21,4 +21,10 @@ public class GetServlet extends HttpServlet
 
         resp.getWriter().print("名字是" + username);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+    {
+        doGet(req, resp);
+    }
 }
