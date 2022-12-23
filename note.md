@@ -57,3 +57,14 @@ web.xml文件头
         </resources>
     </build>
 ```
+
+通过servlet下载文件的步骤
+
+1. 要获取下载文件的路径
+2. 下载的文件名
+3. 设置想办法让浏览器能够支持下载我们需要的东西
+4. 获取下载文件的输入流
+5. 创建缓冲区
+6. 获取outputstream对象
+7. 将FileOutputStream流写入到buffer缓冲区
+8. 使用OutputStream将缓冲区中的数据输出到客户端

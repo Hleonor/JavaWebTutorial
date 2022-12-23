@@ -6,4 +6,13 @@
 
 
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>fileDown</servlet-name>
+    <servlet-class>com.moc.servlet.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fileDown</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
 </web-app>
