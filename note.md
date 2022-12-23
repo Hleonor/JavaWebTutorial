@@ -1,4 +1,4 @@
-新项目pom.xml需要添加的依赖：
+### 新项目pom.xml需要添加的依赖：
 
 ```xml
 <dependencies>
@@ -16,7 +16,7 @@
 </dependencies>
 ```
 
-web.xml文件头
+### web.xml文件头
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,7 +30,7 @@ web.xml文件头
 </web-app>
 ```
 
-解决资源导出失败的方案：
+### 解决资源导出失败的方案：
 
 在对应的pom.xml文件中加入如下资源
 
@@ -58,7 +58,7 @@ web.xml文件头
     </build>
 ```
 
-通过servlet下载文件的步骤
+### 通过servlet下载文件的步骤
 
 1. 要获取下载文件的路径
 2. 下载的文件名
@@ -68,3 +68,11 @@ web.xml文件头
 6. 获取outputstream对象
 7. 将FileOutputStream流写入到buffer缓冲区
 8. 使用OutputStream将缓冲区中的数据输出到客户端
+
+### 实现重定向
+
+一个web资源收到客户端请求后，他会通知客户端区访问另外一个web资源，这个过程叫做重定向
+
+常见场景：
+
+* 用户登陆
