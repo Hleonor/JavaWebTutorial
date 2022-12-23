@@ -15,4 +15,14 @@
     <servlet-name>fileDown</servlet-name>
     <url-pattern>/download</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>com.moc.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/img</url-pattern>
+  </servlet-mapping>
+
 </web-app>
