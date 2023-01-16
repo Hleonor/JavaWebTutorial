@@ -12,6 +12,7 @@
         <module>servlet-01</module>
         <module>servlet-02</module>
         <module>response</module>
+        <module>request-01</module>
     </modules>
 
     <dependencies>
@@ -26,6 +27,8 @@
             <artifactId>jakarta.servlet-api</artifactId>
             <version>5.0.0</version>
         </dependency>
+
+
     </dependencies>
 
     <properties>

@@ -33,4 +33,13 @@
     <servlet-name>RedirectServlet</servlet-name>
     <url-pattern>/red</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>request</servlet-name>
+    <servlet-class>com.moc.servlet.RequestTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>request</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
 </web-app>
